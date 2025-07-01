@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+body{
+  font-family: 'Libre Baskerville';
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.survey-container {
+    display: flex;
+    position:fixed;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+.survey-container *{
+  background-color: white;
+}
+  .survey-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: white;
+    padding: 2.5rem;
+    width:50%;
+    max-width:400px;
+  }
+
+  .survey-header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.25rem;
+  }
+
+  .survey-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .survey-content {
+    text-align: center;
+  }
+
+  .survey-description {
+    text-align: center;
+  }
+
+  .survey-action {
+    display: flex;
+    justify-content: center;
+  }
+
+  .survey-button {
+    border-radius: 0.5rem;
+    background-color: #81d742;
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    border:0px   
+  }
+
+  .survey-close{
+    display: flex;
+    justify-content: end;
+    cursor:pointer;
+    padding:1px;
+  }
+
+  iframe{
+    width:100%;
+    height:100vh;
+  }
